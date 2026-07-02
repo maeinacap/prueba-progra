@@ -1,0 +1,212 @@
+:root {
+  --dark: #171717;
+  --green: #2d6a4f;
+  --light-green: #d8f3dc;
+  --yellow: #ffc107;
+  --gray: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  padding-top: 66px;
+}
+
+.hero-section {
+  min-height: 78vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("../img/volcan villarrica wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-brand i {
+  color: var(--yellow);
+}
+
+.nav-simple {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.nav-menu a:hover {
+  color: var(--yellow);
+}
+
+.category-btn {
+  display: block;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 18px 10px;
+  background-color: white;
+  color: var(--dark);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.category-btn i {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+  color: var(--green);
+}
+
+.category-btn:hover {
+  background-color: var(--green);
+  color: white;
+  transform: translateY(-4px);
+}
+
+.category-btn:hover i {
+  color: var(--yellow);
+}
+
+.catalog-section {
+  scroll-margin-top: 90px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-left: 6px solid var(--green);
+  padding-left: 16px;
+  margin-bottom: 22px;
+}
+
+.section-heading h3 {
+  margin: 0;
+  font-weight: 800;
+}
+
+.section-heading i {
+  color: var(--green);
+}
+
+.section-heading a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.section-heading a:hover {
+  text-decoration: underline;
+}
+
+.product-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.17);
+}
+
+.product-card img {
+  height: 235px;
+  object-fit: cover;
+}
+
+.product-category {
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--light-green);
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.price {
+  color: var(--green);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.btn-dark {
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.contact-form .form-control {
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+}
+
+.footer {
+  background-color: #0d0d0d;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 96px;
+  }
+
+  .nav-simple {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-section {
+    min-height: 70vh;
+  }
+
+  .hero-section h1 {
+    font-size: 2.3rem;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
